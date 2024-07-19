@@ -2,7 +2,7 @@
 
 ## Introduction
 
-There is the key training and evaluation codes for the AAAI-2024 paper "eTag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented Generation".
+The key training and evaluation codes for the AAAI-2024 paper "eTag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented Generation" exist.
 
 ## Requirement
 
@@ -37,11 +37,11 @@ bash -i run.sh imagenet 0 25
 ### arguments
 
 - `-data`: The name of the data you want to test, you can choose from one of them {`cifar100`, `imagenet_sub`} currently.
-- `-log_dir`: Where the models, logs, and events to save.
+- `-log_dir`: Where the models, logs, and events are saved.
 - `-num_task`: Number of tasks after initializing the first task.
-- `-nb_cl_fg`: Number of class in the first task.
+- `-nb_cl_fg`: Number of classes in the first task.
 
-For more tunable arguments, please take a look at the `opts_eTag.py` file.
+For more tunable arguments, please look at the `opts_eTag.py` file.
 
 ## License
 
@@ -50,8 +50,8 @@ A permissive license whose main conditions require preservation of copyright and
 
 | Permissions         | Conditions                      | Limitations      |
 | ------------------- | ------------------------------- | ---------------- |
-| ✔️ Commercial use | ⓘ License and copyright notice | ❌ Trademark use |
-| ✔️ Modification   | ⓘ State changes                | ❌ Liability     |
-| ✔️ Distribution   |                                 | ❌  Warranty     |
-| ✔️ Patent use     |                                 |                  |
-| ✔️ Private use    |                                 |                  |
+| :white_check_mark: Commercial use | ⓘ License and copyright notice | :x: Trademark use |
+| :white_check_mark: Modification   | ⓘ State changes                | :x: Liability     |
+| :white_check_mark: Distribution   |                                 | :x: Warranty     |
+| :white_check_mark: Patent use     |                                 |                  |
+| :white_check_mark: Private use    |                                 |                  |
