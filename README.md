@@ -1,4 +1,4 @@
-# eTag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented
+# eTag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented Generation
 
 ## Introduction
 
