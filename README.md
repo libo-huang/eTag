@@ -2,51 +2,56 @@
 
 ## Introduction
 
-The key training and evaluation codes for the AAAI-2024 paper "eTag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented Generation" exist.
+This repository contains the key training and evaluation codes for the AAAI-2024 paper titled **"eTag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented Generation"**.
 
-## Requirement
+## Requirements
 
-- python = 3.8.5
-- torch = 1.7.1
-- torchvision = 0.8.2
+To run the code, ensure the following dependencies are installed:
 
-## How to run
+- Python 3.8.5
+- PyTorch 1.7.1
+- torchvision 0.8.2
 
-Please confirm the dataset is well downloaded or softly linked in the file "./dataset" at first.
+## How to Run
 
-You can test our method by executing the script we provide, or by running the following command in the path "./scripts"
+### Dataset Preparation
+Before running the code, ensure the dataset is properly downloaded or softly linked in the `./dataset` directory.
 
+### Execution
+You can test our method by executing the provided scripts or running the following commands in the `./scripts` directory:
+
+#### CIFAR-100 Dataset
 ```sh
-# on cifar with 5 tasks
+# 5 tasks
 bash -i run.sh cifar 0 5
-# on cifar with 10 tasks
+# 10 tasks
 bash -i run.sh cifar 0 10
-# on cifar with 25 tasks
+# 25 tasks
 bash -i run.sh cifar 0 25
 ```
 
+#### ImageNet Subset Dataset
 ```sh
-# on imagenet_sub with 5 tasks
+# 5 tasks
 bash -i run.sh imagenet 0 5
-# on imagenet_sub with 10 tasks
+# 10 tasks
 bash -i run.sh imagenet 0 10
-# on imagenet_sub with 25 tasks
+# 25 tasks
 bash -i run.sh imagenet 0 25
 ```
 
-### arguments
-
-- `-data`: The name of the data you want to test, you can choose from one of them {`cifar100`, `imagenet_sub`} currently.
-- `-log_dir`: Where the models, logs, and events are saved.
-- `-num_task`: Number of tasks after initializing the first task.
+### Arguments
+- `-data`: Dataset name. Choose from `cifar100` or `imagenet_sub`.
+- `-log_dir`: Directory to save models, logs, and events.
+- `-num_task`: Number of tasks after the initial task.
 - `-nb_cl_fg`: Number of classes in the first task.
 
-For more tunable arguments, please look at the `opts_eTag.py` file.
+For additional tunable arguments, refer to the `opts_eTag.py` file.
 
 ## License
 
-**Apache License 2.0**
-A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+This project is licensed under the **Apache License 2.0**.  
+A permissive license that requires preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 | Permissions         | Conditions                      | Limitations      |
 | ------------------- | ------------------------------- | ---------------- |
@@ -55,3 +60,4 @@ A permissive license whose main conditions require preservation of copyright and
 | :white_check_mark: Distribution   |                                 | :x: Warranty     |
 | :white_check_mark: Patent use     |                                 |                  |
 | :white_check_mark: Private use    |                                 |                  |
+
